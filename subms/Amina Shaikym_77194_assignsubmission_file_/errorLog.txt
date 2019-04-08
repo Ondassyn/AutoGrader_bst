@@ -1,0 +1,252 @@
+
+{Extracting}: ...
+{Extracting}: SUCCESS
+
+{Copying}: ...
+
+{Compiler}: ...
+==> set.cpp: In function ‘const treenode* find(const treenode*, const string&)’:
+==> set.cpp:141:1: warning: control reaches end of non-void function [-Wreturn-type]
+==>  }
+==>  ^
+==> set.cpp: In function ‘treenode** find(treenode**, const string&)’:
+==> set.cpp:156:1: warning: control reaches end of non-void function [-Wreturn-type]
+==>  }
+==>  ^
+==> set.cpp: In member function ‘bool set::insert(const string&)’:
+==> set.cpp:219:1: warning: control reaches end of non-void function [-Wreturn-type]
+==>  }
+==>  ^
+{Compiler}: SUCCESS
+
+{Test}: ...
+==> ~CORRECT EQUAL (abcde, abcde) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT EQUAL (ABCDE, abcde) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT EQUAL (aaaa, aaa) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT EQUAL (aaa, aaaa) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT EQUAL (abcde, edcba) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT EQUAL (ab1Cde, ab1cde) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT BEFORE (abcde, abcde) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT BEFORE (ABCDE, abcde) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT BEFORE (aaaa, aaa) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT BEFORE (aaa, aaaa) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT BEFORE (abcde, edcba) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT BEFORE (edcba, abcde) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT OUTPUT () :
+==> #
+==> 
+==> ~CORRECT IS_EMPTY() : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT HEIGHT () : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT INSERT (nolan) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT IS_EMPTY() : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT INSERT (spielberg) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT INSERT (eastwood) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT INSERT (hitchcock) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 4 SHOULD HAVE BEEN 4
+==> ~CORRECT INSERT (cameron) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT INSERT (kubrick) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 6 SHOULD HAVE BEEN 6
+==> ~CORRECT HEIGHT() : 4 SHOULD HAVE BEEN 3 OR 4
+==> ~CORRECT INSERT (easTwooD) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT INSERT (cameRon) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT INSERT (kuBricK) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT SIZE() : 6 SHOULD HAVE BEEN 6
+==> ~CORRECT INSERT (Anderson) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT INSERT (cuaron) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT INSERT (tarantino) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 9 SHOULD HAVE BEEN 9
+==> ~CORRECT HEIGHT() : 4 SHOULD HAVE BEEN 3 OR 4
+==> ~CORRECT TOP () : nolan SHOULD HAVE BEEN nolan
+==> ~CORRECT OUTPUT () :
+==> nolan
+==> |  eastwood
+==> |  |  cameron
+==> |  |  |  Anderson
+==> |  |  |  |  #
+==> |  |  |  |  #
+==> |  |  |  cuaron
+==> |  |  |  |  #
+==> |  |  |  |  #
+==> |  |  hitchcock
+==> |  |  |  #
+==> |  |  |  kubrick
+==> |  |  |  |  #
+==> |  |  |  |  #
+==> |  spielberg
+==> |  |  #
+==> |  |  TaRantino
+==> |  |  |  #
+==> |  |  |  #
+==> 
+==> ~CORRECT CONTAINS (SPIELBERG) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT CONTAINS (COPPOLA) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT CONTAINS (hitchcock) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT CONTAINS (cameroni) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT CONTAINS (SPIELBERG) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT CONTAINS (hitchcock) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT INSERT (TaRaNtINo) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT INSERT (zemeckis) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT INSERT (wachowski) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 11 SHOULD HAVE BEEN 11
+==> ~CORRECT HEIGHT() : 5 SHOULD HAVE BEEN 4 OR 5
+==> ~CORRECT OUTPUT () :
+==> nolan
+==> |  eastwood
+==> |  |  cameron
+==> |  |  |  Anderson
+==> |  |  |  |  #
+==> |  |  |  |  #
+==> |  |  |  cuaron
+==> |  |  |  |  #
+==> |  |  |  |  #
+==> |  |  hitchcock
+==> |  |  |  #
+==> |  |  |  kubrick
+==> |  |  |  |  #
+==> |  |  |  |  #
+==> |  spielberg
+==> |  |  #
+==> |  |  TaRantino
+==> |  |  |  #
+==> |  |  |  zemeckis
+==> |  |  |  |  wachowski
+==> |  |  |  |  |  #
+==> |  |  |  |  |  #
+==> |  |  |  |  #
+==> 
+==> ~CORRECT REMOVE (zemeckis) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 10 SHOULD HAVE BEEN 10
+==> ~CORRECT HEIGHT() : 4 SHOULD HAVE BEEN 3 OR 4
+==> ~CORRECT REMOVE (kurosawa) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT REMOVE (wachowski) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT REMOVE (wachowski) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 8 SHOULD HAVE BEEN 8
+==> ~CORRECT HEIGHT() : 4 SHOULD HAVE BEEN 3 OR 4
+==> ~CORRECT HEIGHT() : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT TOP () : eastwood SHOULD HAVE BEEN eastwood
+==> ~CORRECT SIZE() : 7 SHOULD HAVE BEEN 7
+==> ~CORRECT HEIGHT() : 4 SHOULD HAVE BEEN 3 OR 4
+==> ~CORRECT OUTPUT () :
+==> eastwood
+==> |  cameron
+==> |  |  Anderson
+==> |  |  |  #
+==> |  |  |  #
+==> |  |  cuaron
+==> |  |  |  #
+==> |  |  |  #
+==> |  hitchcock
+==> |  |  #
+==> |  |  spielberg
+==> |  |  |  #
+==> |  |  |  TaRantino
+==> |  |  |  |  #
+==> |  |  |  |  #
+==> 
+==> ~CORRECT OUTPUT () : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT TOP () : cameron SHOULD HAVE BEEN cameron
+==> ~CORRECT SIZE() : 6 SHOULD HAVE BEEN 6
+==> ~CORRECT HEIGHT() : 5 SHOULD HAVE BEEN 4 OR 5
+==> ~CORRECT OUTPUT () :
+==> cameron
+==> |  Anderson
+==> |  |  #
+==> |  |  #
+==> |  cuaron
+==> |  |  #
+==> |  |  hitchcock
+==> |  |  |  #
+==> |  |  |  spielberg
+==> |  |  |  |  #
+==> |  |  |  |  TaRantino
+==> |  |  |  |  |  #
+==> |  |  |  |  |  #
+==> 
+==> ~CORRECT SIZE() : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT HEIGHT() : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT INSERT (Lee) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT HEIGHT() : 1 SHOULD HAVE BEEN 0 OR 1
+==> ~CORRECT INSERT (finCHER) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT INSERT (scorcese) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 3 SHOULD HAVE BEEN 3
+==> ~CORRECT HEIGHT() : 2 SHOULD HAVE BEEN 1 OR 2
+==> ~CORRECT REMOVE (tarkovskiy) : 0 SHOULD HAVE BEEN 0
+==> ~CORRECT REMOVE (LEE) : 1 SHOULD HAVE BEEN 1
+==> ~CORRECT SIZE() : 2 SHOULD HAVE BEEN 2
+==> ~CORRECT HEIGHT() : 2 SHOULD HAVE BEEN 1 OR 2
+==> ~CORRECT OUTPUT () :
+==> finCHER
+==> |  #
+==> |  scorcese
+==> |  |  #
+==> |  |  #
+==> 
+==> 
+==> TESTS RUN: 81
+==> 
+==> TESTS CORRECT: 81
+
+{Valgrind}: ...
+==> ==21301== Memcheck, a memory error detector
+==> ==21301== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==> ==21301== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==> ==21301== Command: /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina\ Shaikym_77194_assignsubmission_file_/main
+==> ==21301== 
+==> ==21301== Conditional jump or move depends on uninitialised value(s)
+==> ==21301==    at 0x53FFE6F: tolower (ctype.c:46)
+==> ==21301==    by 0x408A66: before(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301==    by 0x401A72: main (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301== 
+==> ==21301== Use of uninitialised value of size 8
+==> ==21301==    at 0x53FFE83: tolower (ctype.c:46)
+==> ==21301==    by 0x408A66: before(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301==    by 0x401A72: main (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301== 
+==> ==21301== Conditional jump or move depends on uninitialised value(s)
+==> ==21301==    at 0x53FFE6F: tolower (ctype.c:46)
+==> ==21301==    by 0x408A72: before(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301==    by 0x401A72: main (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301== 
+==> ==21301== Use of uninitialised value of size 8
+==> ==21301==    at 0x53FFE83: tolower (ctype.c:46)
+==> ==21301==    by 0x408A72: before(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301==    by 0x401A72: main (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301== 
+==> ==21301== Conditional jump or move depends on uninitialised value(s)
+==> ==21301==    at 0x53FFE6F: tolower (ctype.c:46)
+==> ==21301==    by 0x408A66: before(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301==    by 0x401B52: main (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301== 
+==> ==21301== Use of uninitialised value of size 8
+==> ==21301==    at 0x53FFE83: tolower (ctype.c:46)
+==> ==21301==    by 0x408A66: before(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301==    by 0x401B52: main (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301== 
+==> ==21301== Conditional jump or move depends on uninitialised value(s)
+==> ==21301==    at 0x53FFE6F: tolower (ctype.c:46)
+==> ==21301==    by 0x408A72: before(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301==    by 0x401B52: main (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301== 
+==> ==21301== Use of uninitialised value of size 8
+==> ==21301==    at 0x53FFE83: tolower (ctype.c:46)
+==> ==21301==    by 0x408A72: before(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301==    by 0x401B52: main (in /home/ondassyn/CPPWorkspace/Auto_bst/subms/Amina Shaikym_77194_assignsubmission_file_/main)
+==> ==21301== 
+==> ==21301== 
+==> ==21301== HEAP SUMMARY:
+==> ==21301==     in use at exit: 72,704 bytes in 1 blocks
+==> ==21301==   total heap usage: 92 allocs, 91 frees, 87,069 bytes allocated
+==> ==21301== 
+==> ==21301== LEAK SUMMARY:
+==> ==21301==    definitely lost: 0 bytes in 0 blocks
+==> ==21301==    indirectly lost: 0 bytes in 0 blocks
+==> ==21301==      possibly lost: 0 bytes in 0 blocks
+==> ==21301==    still reachable: 72,704 bytes in 1 blocks
+==> ==21301==         suppressed: 0 bytes in 0 blocks
+==> ==21301== Rerun with --leak-check=full to see details of leaked memory
+==> ==21301== 
+==> ==21301== For counts of detected and suppressed errors, rerun with: -v
+==> ==21301== Use --track-origins=yes to see where uninitialised values come from
+==> ==21301== ERROR SUMMARY: 56 errors from 8 contexts (suppressed: 0 from 0)

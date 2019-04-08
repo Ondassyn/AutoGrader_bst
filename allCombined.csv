@@ -1,0 +1,2 @@
+id,firstName,lastName,extraction,compilation,testsRun,testsCorrect,definitelyLost(bytes),definitelyLost(blocks),errorSummary(errors),errorSummary(contexts)
+1,Amina,Shaikym,yes,yes,81,81,0,0,56,8
